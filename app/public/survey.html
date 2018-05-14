@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+    <!-- Chosen -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
   </head>
 
   <body>
@@ -247,8 +252,8 @@
             // Grab the result from the AJAX post so that the best match's name and photo are displayed.
             $("#match-name").text(data.name);
             $("#match-img").attr("src", data.photo);
-
-            // Show the modal with the best match
+            //
+            // // Show the modal with the best match
             $("#results-modal").modal("toggle");
 
           });
